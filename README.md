@@ -4,7 +4,7 @@
 ![ci](https://img.shields.io/github/actions/workflow/status/dnv-opensource/pystclient/.github%2Fworkflows%2Fnightly_build.yml?label=ci)
 [![docs](https://img.shields.io/github/actions/workflow/status/dnv-opensource/pystclient/.github%2Fworkflows%2Fpush_to_release.yml?label=docs)][pystclient_docs]
 
-# Pystclient - A Python client for Simulation Trust Center (STC)
+# Pystclient - A Python client for Simulation Trust Center (STC) - test
 
 ## Table of Contents
 
