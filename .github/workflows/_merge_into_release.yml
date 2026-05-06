@@ -1,10 +1,6 @@
 name: Merge into release
 
-on:
-  workflow_call:
-    secrets:
-      RELEASE_TOKEN:
-        required: true
+on: workflow_call
 
 jobs:
   merge_into_release:
@@ -23,4 +19,4 @@ jobs:
         with:
           type: now
           target_branch: release
-          github_token: ${{ secrets.RELEASE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
