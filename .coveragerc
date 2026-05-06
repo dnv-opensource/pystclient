@@ -1,0 +1,13 @@
+[paths]
+source =
+    src/pystclient
+    */site-packages/pystclient
+
+[run]
+source = pystclient
+branch = True
+
+[report]
+fail_under = 10.0
+show_missing = True
+skip_covered = True

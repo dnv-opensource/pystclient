@@ -1,0 +1,205 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "pystclient"
+dynamic = ["version"]
+description = "Python client library for STC."
+readme = "README.md"
+requires-python = ">= 3.11"
+license-files = [ "LICENSE", "THIRD_PARTY_LICENSES"]
+authors = [
+    { name = "Hee Jong Park", email = "hee.jong.park@dnv.com" },
+]
+maintainers = [
+    { name = "Claas Rostock", email = "claas.rostock@dnv.com" },
+]
+keywords = [
+    "STC",
+    "Python",
+    "Client",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pydantic>=2.12",
+    "dictIO>=0.4.4",
+    "Authlib>=1.6.9",
+    "requests>=2.33",
+    "python-dotenv>=1.2.2",
+    "edn-format>=0.7.5",
+    "joserfc>=1.6.4",
+]
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+    "src/pystclient",
+    "tests",
+    ".coveragerc",
+    ".editorconfig",
+    ".pre-commit-config.yaml",
+    "pyproject.toml",
+    "pytest.ini",
+    "ruff.toml",
+    "uv.lock",
+    "THIRD_PARTY_LICENSES",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/pystclient",
+]
+
+[tool.hatch.version]
+path = "src/pystclient/__about__.py"
+
+[tool.pip-licenses]
+format = "markdown"
+order = "license"
+packages = [
+    "pydantic",
+    "dictIO",
+    "Authlib",
+    "requests",
+    "python-dotenv",
+    "edn-format",
+    "joserfc",
+]
+
+[project.urls]
+Homepage = "https://github.com/dnv-opensource/pystclient"
+Documentation = "https://dnv-opensource.github.io/pystclient/README.html"
+Repository = "https://github.com/dnv-opensource/pystclient.git"
+Issues = "https://github.com/dnv-opensource/pystclient/issues"
+Changelog = "https://github.com/dnv-opensource/pystclient/blob/main/CHANGELOG.md"
+
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+    "pytest-cov>=7.1",
+    "pytest-dependency>=0.6.0",
+    "pytest-timeout>=2.3.1",
+    "ruff>=0.15.9",
+    "pyright>=1.1.408",
+    "mypy>=1.19.1",
+    "sourcery>=1.43.0",
+    "pre-commit>=4.5",
+    "Sphinx>=9.0",
+    "sphinx-argparse-cli>=1.21.3",
+    "sphinx-autodoc-typehints>=3.6",
+    "sphinxcontrib-mermaid>=2.0",
+    "myst-parser>=5.0",
+    "furo>=2025.12",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10",
+    "selenium>=4.33.0",
+    "pip-system-certs>=5.3",
+    "pip-licenses>=5.5.5",
+]
+certs = [
+    "pip-system-certs>=5.3",
+]
+
+[tool.uv]
+default-groups = [
+    "dev",
+]
+find-links = [
+]
+native-tls = true
+required-environments = [
+    "sys_platform == 'win32'",
+    "sys_platform == 'linux'",
+    "sys_platform == 'darwin'",
+]
+
+
+[project.scripts]
+pystclient = "pystclient.cli.__main__:main"
+
+
+[tool.mypy]
+plugins = []
+mypy_path = "stubs"
+files = [
+    "src",
+    "tests",
+    # "examples",
+]
+exclude = [
+    "src/folder_to_be_excluded",
+]
+check_untyped_defs = true
+disable_error_code = [
+    "misc",
+    "import-untyped",
+]
+
+
+[tool.pyright]
+stubPath = "stubs"
+include = [
+    "src",
+    "tests",
+    "examples",
+]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.*",
+    ".venv",
+    "src/folder_to_be_excluded",
+]
+
+typeCheckingMode = "basic"
+useLibraryCodeForTypes = true
+reportMissingParameterType = "error"
+reportUnknownParameterType = "warning"
+reportUnknownMemberType = "warning"                # consider to set to `false` if you work a lot with matplotlib and pandas, which are both not properly typed and known to trigger this warning
+reportMissingTypeArgument = "error"
+reportPropertyTypeMismatch = "error"
+reportFunctionMemberAccess = "warning"
+reportPrivateUsage = "warning"
+reportTypeCommentUsage = "warning"
+reportIncompatibleMethodOverride = "warning"
+reportIncompatibleVariableOverride = "error"
+reportInconsistentConstructor = "error"
+reportOverlappingOverload = "warning"
+reportUninitializedInstanceVariable = "warning"
+reportCallInDefaultInitializer = "warning"
+reportUnnecessaryIsInstance = "information"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportUnnecessaryContains = "warning"
+reportUnusedCallResult = "warning"
+reportUnusedExpression = "warning"
+reportMatchNotExhaustive = "warning"
+reportUntypedFunctionDecorator = "warning"
+reportUntypedClassDecorator = "warning"
+reportUntypedBaseClass = "error"
+reportUntypedNamedTuple = "warning"
+reportUnnecessaryTypeIgnoreComment = "information"
+# Activate the following rules only locally and temporary, i.e. for a QA session.
+# (For server side CI they are considered too strict.)
+# reportMissingTypeStubs = true
+# reportConstantRedefinition = "warning"
+# reportImportCycles = "warning"
+# reportImplicitStringConcatenation = "warning"

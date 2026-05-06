@@ -1,0 +1,26 @@
+Variable,Value
+PackageNameDashed,pystclient
+PackageNameCapitalized,PyStclient
+GitHubOrganisation,dnv-opensource
+SubPackage1Name,resources
+Module1Name,
+SubPackage2Name,
+Module2Name,
+Author1Name,Hee Jong Park
+Author1Email,hee.jong.park@dnv.com
+Author1LinkedIn,https://www.linkedin.com/in/heejongpark/
+Author2Name,
+Author2Email,
+Author2LinkedIn,
+Author3Name,
+Author3Email,
+Author3LinkedIn,
+Maintainer1Name,Claas Rostock
+Maintainer1Email,claas.rostock@dnv.com
+Maintainer1LinkedIn,https://www.linkedin.com/in/claasrostock/?locale=en_US
+Maintainer2Name,
+Maintainer2Email,
+Maintainer2LinkedIn,
+Keyword1,STC
+Keyword2,Python
+Keyword3,Client
