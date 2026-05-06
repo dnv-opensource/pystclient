@@ -601,7 +601,7 @@ class MeasurementClient(BaseClient):
         query_url = f"{query_url}&simulation-id={simulation_id}" if simulation_id is not None else query_url
         r = to_models(
             self.session.get(query_url),
-            Measurements,
+Measurements,
         )
         return r
 
