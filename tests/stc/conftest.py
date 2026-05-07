@@ -67,15 +67,15 @@ def test_models_by_version_id() -> list[FmuSelect]:
         FmuSelect(version=uuid.UUID(x))
         for x in (
             [
-                "21B8F9DF-67F5-4A24-9325-45538E2E6EE0",  # Spring
-                "EE1EFF08-8958-495C-ADAF-1156E296524C",  # Mass
-                "830B4F41-BC6C-4A5F-B12D-8F81FB449626",  # Damper
-            ]
-            if any(x in API_ENDPOINT for x in ["dnvgl-osp-api-dev", "localhost", "127.0.0.1"])
-            else [
                 "592B1E80-79B3-4E7C-8304-D360B942176D",  # Spring
                 "54B95A5F-0936-4BBD-8011-F3CCF934A2B1",  # Mass
                 "373EA52B-3BF1-4190-AEE2-D28EC37871F2",  # Damper
+            ]
+            if "api.stc.dnv.com" in API_ENDPOINT
+            else [
+                "21B8F9DF-67F5-4A24-9325-45538E2E6EE0",  # Spring
+                "EE1EFF08-8958-495C-ADAF-1156E296524C",  # Mass
+                "830B4F41-BC6C-4A5F-B12D-8F81FB449626",  # Damper
             ]
         )
     ]
@@ -88,15 +88,15 @@ def test_models_by_model_id() -> list[FmuSelect]:
         FmuSelect(id=uuid.UUID(x))
         for x in (
             [
-                "95BD75BD-26DF-47DD-B353-49A460FCF83F",  # Spring
-                "CBEBAEE0-2C4D-4746-B26C-BDAFC6C02247",  # Mass
-                "88EAF9B4-BAAB-449C-97A1-FEE85CDFE38C",  # Damper
-            ]
-            if any(x in API_ENDPOINT for x in ["dnvgl-osp-api-dev", "localhost"])
-            else [
                 "869699A2-8945-4D48-B135-AB0AEBD292CA",  # Spring
                 "9D872C71-9589-4171-B2D0-3374CC947F70",  # Mass
                 "617EED59-21BF-438A-8524-0C09C7F8D5FF",  # Damper
+            ]
+            if "api.stc.dnv.com" in API_ENDPOINT
+            else [
+                "95BD75BD-26DF-47DD-B353-49A460FCF83F",  # Spring
+                "CBEBAEE0-2C4D-4746-B26C-BDAFC6C02247",  # Mass
+                "88EAF9B4-BAAB-449C-97A1-FEE85CDFE38C",  # Damper
             ]
         )
     ]
