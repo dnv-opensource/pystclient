@@ -64,6 +64,7 @@ def test_run_simulation(
             project_id=test_project.id,
             parameter_set_names=["Config 1"],
             type=SimulationType.DISTRIBUTED,
+            is_interactive=True,
         )
     )
     simulator_id = status[0].id
