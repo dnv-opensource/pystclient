@@ -6,8 +6,9 @@ from pathlib import Path
 
 import pytest
 
+from pystclient import __version__
 from pystclient.cli import __main__
-from pystclient.cli.__main__ import _argparser, _get_version, main
+from pystclient.cli.__main__ import _argparser, main
 
 # *****Test commandline interface (CLI)************************************************************
 
@@ -93,12 +94,13 @@ def test_cli_version(
     # Prepare
     monkeypatch.setattr(sys, "argv", ["pystclient", flag])
     parser = _argparser()
+    version_expected = __version__
     # Execute & Assert
     with pytest.raises(SystemExit) as exc_info:
         _ = parser.parse_args()
     assert exc_info.value.code == 0
     captured = capsys.readouterr()
-    assert _get_version() in captured.out
+    assert version_expected in captured.out
 
 
 # *****Ensure the CLI correctly configures logging*************************************************

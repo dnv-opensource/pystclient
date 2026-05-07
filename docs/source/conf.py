@@ -16,17 +16,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path("../../src").absolute()))
 
-# Read version from src/pystclient/__about__.py
-import importlib.util
-
-_spec = importlib.util.spec_from_file_location(
-    "_about", Path(__file__).parent.parent.parent / "src" / "pystclient" / "__about__.py"
-)
-assert _spec
-assert _spec.loader, "Could not load __about__.py"
-_about = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_about)
-
+# Read version from project metadata (i.e. from pyproject.toml)
+from pystclient import __version__
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -36,7 +27,7 @@ copyright = "2026, DNV AS. All rights reserved."
 author = "Hee Jong Park, Claas Rostock"
 
 # The full version, including alpha/beta/rc tags
-release = _about.__version__
+release = __version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

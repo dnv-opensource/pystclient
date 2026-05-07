@@ -1,29 +1,29 @@
 title: pystclient
-version: 0.0.4
+version: 0.0.5
 abstract: >-
-    Python client library for STC.
+  Python client library for STC.
 type: software
 authors:
-    - name: DNV AS
-      address: 'Veritasveien 1'
-      post-code: '1363'
-      city: Høvik
-      country: NO
-      website: 'https://www.dnv.com/'
-    - given-names: Hee Jong
-      family-names: Park
-      affiliation: DNV
-      email: hee.jong.park@dnv.com
-      website: 'https://www.linkedin.com/in/heejongpark/'
-    - given-names: Claas
-      family-names: Rostock
-      affiliation: DNV
-      email: claas.rostock@dnv.com
-      website: 'https://www.linkedin.com/in/claasrostock/?locale=en_US'
+  - name: DNV AS
+    address: 'Veritasveien 1'
+    post-code: '1363'
+    city: Høvik
+    country: NO
+    website: 'https://www.dnv.com/'
+  - given-names: Hee Jong
+    family-names: Park
+    affiliation: DNV
+    email: hee.jong.park@dnv.com
+    website: 'https://www.linkedin.com/in/heejongpark/'
+  - given-names: Claas
+    family-names: Rostock
+    affiliation: DNV
+    email: claas.rostock@dnv.com
+    website: 'https://www.linkedin.com/in/claasrostock/?locale=en_US'
 keywords:
-    - STC
-    - Python
-    - Client
+  - STC
+  - Python
+  - Client
 license: MIT
 license-url: 'https://dnv-opensource.github.io/pystclient/LICENSE.html'
 url: 'https://dnv-opensource.github.io/pystclient/README.html'
