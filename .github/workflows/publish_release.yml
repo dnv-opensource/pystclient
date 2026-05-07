@@ -9,6 +9,26 @@ on:
 jobs:
   build_package:
     uses: ./.github/workflows/_build_package.yml
+  create_release:
+    name: Create GitHub Release
+    needs:
+      - build_package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Download build artifacts
+        uses: actions/download-artifact@v5
+        with:
+          name: dist
+          path: dist
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: dist/*
   # publish_package:
   #   name: Publish package
   #   needs:
