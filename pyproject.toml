@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pystclient"
-dynamic = ["version"]
+version = "0.0.5"
 description = "Python client library for STC."
 readme = "README.md"
 requires-python = ">= 3.11"
@@ -66,9 +66,6 @@ only-include = [
 packages = [
     "src/pystclient",
 ]
-
-[tool.hatch.version]
-path = "src/pystclient/__about__.py"
 
 [tool.pip-licenses]
 format = "markdown"

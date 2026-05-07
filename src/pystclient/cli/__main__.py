@@ -13,22 +13,13 @@
 import argparse
 import logging
 import pprint
-from importlib import metadata
 from pathlib import Path
 
+from pystclient import __version__
 from pystclient.api import run
 from pystclient.utils.logging import configure_logging
 
 logger = logging.getLogger(__name__)
-
-
-def _get_version() -> str:
-    """Return the installed package version, or a safe fallback if unavailable."""
-    try:
-        return metadata.version("pystclient")
-    except metadata.PackageNotFoundError:
-        # Fallback when package metadata is not available (e.g. running from source)
-        return "pystclient (version unknown)"
 
 
 def _argparser() -> argparse.ArgumentParser:
@@ -109,7 +100,7 @@ def _argparser() -> argparse.ArgumentParser:
         "-V",
         "--version",
         action="version",
-        version=_get_version(),
+        version=__version__,
     )
 
     return parser
