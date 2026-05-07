@@ -8,6 +8,21 @@ The changelog format is based on [Keep a Changelog](https://keepachangelog.com/e
 * -/-
 
 
+## [0.0.5] - 2026-05-07
+
+### Changed
+* Changed the approach how dynamic versioning is realised
+  * Old:
+    * `src/pystclient/__about__.py` was single source of truth for version number.
+    * Version inside `pyproject.toml` was dynamically resolved via `hatch.version`.
+  * New:
+    * `pyproject.toml` is single source of truth for version number.
+    * `__version__` attribute inside `src/pystclient/__init__.py` gets dynamically resolved from project metadata
+  * NOTE: Project metadata (and hence the project version number) gets populated with data from `pyproject.toml` whenever the package is installed in the local environment, i.e. with every call to `uv sync`, `uv run`, or when a user installs the package via pip.
+    This means: As long as the package is _installed_ (even when installed in "just" editable mode) the dynamic resolution of the version number from `pyproject.toml` as single source of truth works just fine.
+    With that, the dynamic version is reliably resolved independent of whether or not the package is actually being _built_ (as in the former approach, via `hatch.version`). It is now sufficient that the package is _installed_ in the local environment. Only in the hypothetical case that one runs code from the package directly from source, without installing the package beforehand, the version resolution would fail. However, using code from a package without installing it has, latest since the advent of `uv`, become a very uncommon case.
+
+
 ## [0.0.4] - 2026-05-04
 
 ### Changed
@@ -197,7 +212,8 @@ This removes the need to manually add /src to the PythonPath environment variabl
 
 
 <!-- Markdown link & img dfn's -->
-[unreleased]: https://github.com/dnv-opensource/pystclient/compare/v0.0.4...HEAD
+[unreleased]: https://github.com/dnv-opensource/pystclient/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/dnv-opensource/pystclient/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/dnv-opensource/pystclient/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/dnv-opensource/pystclient/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/dnv-opensource/pystclient/compare/v0.0.1...v0.0.2
