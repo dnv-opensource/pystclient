@@ -44,7 +44,7 @@ HTTP API by hand.
 ## Installation
 
 ```sh
-pip install pystclient
+pip install git+https://github.com/dnv-opensource/pystclient.git
 ```
 
 ## Usage
@@ -67,13 +67,15 @@ print(projects)
 
 ### Running a Simulation
 
-The following example runs a non-interactive distributed simulation using a
-Spring-Mass-Damper project that has already been configured on the STC platform.
+The following example runs a **single non-interactive** distributed simulation
+using a Spring-Mass-Damper project that has already been configured on the STC
+platform. A simulation is non-interactive when the simulator runs to completion
+without user intervention (create → run → finish).
 
 ```py
 import time
 
-from pystclient.clients import PyStclient, SimulationResults
+from pystclient.clients import PyStclient
 from pystclient.models import (
     LoggingConfiguration,
     ModelParameters,
@@ -119,8 +121,8 @@ client.project.update_log_config(
     project.id, LoggingConfiguration(post_plotting=True)
 )
 
-# 5 — Create a simulator and wait until it is ready
-statuses, ready_future = client.simulator.create(
+# 5 — Create a non-interactive distributed simulator and wait until it is ready
+statuses, future = client.simulator.create(
     SimulationConfig(
         project_id=project.id,
         parameter_set_names=["Config 1"],
@@ -128,71 +130,79 @@ statuses, ready_future = client.simulator.create(
     )
 )
 simulator_id = statuses[0].id
-assert ready_future.result(600), "Simulator did not become ready in time!"
+assert future.result(600), "Simulator did not become ready in time!"
 
-# 6 — Start the simulation with recording enabled
-client.simulator.start(simulator_id, record=True)
-
-# 7 — Poll until the simulation finishes
+# 6 — Poll until the simulation finishes
 while not client.simulator.finished(simulator_id):
     s = client.simulator.status(simulator_id)
     print(f"  simulation_time={s.simulation_time}  end_time={s.end_time}")
-    time.sleep(2)
+    time.sleep(1)
 
-# 8 — End the simulation and collect results
-results: SimulationResults | None = client.simulator.end_simulation(simulator_id).result(120)
-assert results is not None, "No results returned!"
-print(f"Results available — {results.measurement_size()} measurement(s).")
+print("Simulation finished.")
 ```
 
 ### Fetching and Displaying Results
 
-Once a simulation has completed and a `SimulationResults` object is available
-(see the previous example), you can iterate over the time-series data and
-plot it with [matplotlib](https://matplotlib.org/):
+Once a simulation has completed, you can retrieve it from the list of
+completed simulations and query time-series data for plotting with
+[matplotlib](https://matplotlib.org/):
 
 ```py
+import time
+
 import matplotlib.pyplot as plt
 
-from pystclient.models import QueryVariable
+from pystclient.models import MeasurementQuery, QueryVariable, SimulationInfo
+from pystclient.types import FmuCausalityType
 from pystclient.utils.time import convert_to_timestamp
 
-# Reset the results iterator to start from the beginning
-results.reset()
+# Wait for the simulation to appear in the completed list
+completed_simulations: list[SimulationInfo] = []
 
-# Iterate through all time windows and collect displacement data
+while len(completed_simulations) != 1:
+    completed_simulations = client.project.completed_simulations(
+        project_id=project.id,
+        simulator_ids=[simulator_id],
+        limit=10,
+    )
+    time.sleep(5)
+
+sim = completed_simulations[0]
+print(f"Simulation {sim.id}  name={sim.name}  param_set={sim.parameter_set_name}")
+
+# Retrieve measurements and query specific variable data
+sim_measurements = client.measurement.measurements(project.id, sim.id)
+assert sim_measurements, "No measurements found!"
+
+measurement = sim_measurements[0]
+q = MeasurementQuery(
+    variables=[
+        QueryVariable(
+            instance_name="Spring1",
+            name="dis_yx",
+            causality=FmuCausalityType.INPUT,
+        )
+    ],
+    time_from=0,
+    time_to=10,
+)
+results = client.measurement.query(measurement.id, q)
+
+# Plot the displacement data
 fig, ax = plt.subplots(figsize=(10, 5))
 
-for query_result in results:
-    for result in query_result:
-        if result.signal == "dis_yx":
-            x = convert_to_timestamp(result.x)
-            ax.plot(x, result.y, label=f"{result.module} — {result.signal}")
+for result in results:
+    x = convert_to_timestamp(result.x)
+    ax.plot(x, result.y, label=f"{sim.parameter_set_name}")
 
 ax.set_xlabel("Time [s]")
 ax.set_ylabel("Displacement [m]")
-ax.set_title("Spring-Mass-Damper — Displacement (dis_yx)")
+ax.set_title("Spring-Mass-Damper — Spring Displacement (dis_yx)")
 ax.legend()
 plt.tight_layout()
 plt.show()
 ```
 
-You can also narrow the query to specific variables using `query_variables`:
-
-```py
-results.reset(
-    query_variables=[
-        QueryVariable(instance_name="Mass1", name="dis_yx", causality="output"),
-    ]
-)
-
-for query_result in results:
-    for result in query_result:
-        print(f"{result.module}.{result.signal}: {len(result.y)} data points")
-```
-
-> **Tip**: Use `results.step(timedelta(minutes=5))` to change the size of
-> each time window when paging through results.
 
 > **See also**: For complete, runnable notebooks check the
 > [`examples/`](https://github.com/dnv-opensource/pystclient/tree/main/examples) directory.
