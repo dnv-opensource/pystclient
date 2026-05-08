@@ -44,7 +44,7 @@ HTTP API by hand.
 ## Installation
 
 ```sh
-pip install pystclient
+pip install git+https://github.com/dnv-opensource/pystclient.git
 ```
 
 ## Usage
