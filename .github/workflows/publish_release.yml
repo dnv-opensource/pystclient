@@ -49,3 +49,5 @@ jobs:
   #       #   repository-url: https://test.pypi.org/legacy/   # Uncomment this line to publish to testpypi
   merge_into_release:
     uses: ./.github/workflows/_merge_into_release.yml
+    secrets:
+      RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
