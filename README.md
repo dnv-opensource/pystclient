@@ -61,7 +61,7 @@ client = PyStclient()
 client.authenticate()  # This will prompt for login if needed
 
 # Now you can use the client to interact with STC
-projects = client.list_projects()
+projects = client.project.info_all()
 print(projects)
 ```
 
