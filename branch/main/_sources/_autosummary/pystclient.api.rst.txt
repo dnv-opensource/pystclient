@@ -1,0 +1,22 @@
+﻿pystclient.api
+==============
+
+.. automodule:: pystclient.api
+   :members:
+   :exclude-members: PyStclientProcess,
+   
+
+
+   
+   .. rubric:: Functions
+   .. autosummary::
+   
+      run
+   
+   .. rubric:: Classes
+   .. autosummary::
+      :toctree:
+      :template: custom-class.rst
+   
+      PyStclientProcess
+   
