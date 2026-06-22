@@ -148,7 +148,7 @@ class MeasurementVariables(BaseModel):
     variability: str
     reference: int
     causality: FmuCausalityType
-    start_value: Annotated[float , Field(alias="start-value")] = 0
+    start_value: Annotated[float, Field(alias="start-value")] = 0
 
 
 class MeasurementInstance(BaseModel):
