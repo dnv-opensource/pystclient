@@ -1,0 +1,28 @@
+FmuVariableTypeEnum
+===================
+
+.. currentmodule:: pystclient.types
+
+.. autoclass:: FmuVariableTypeEnum
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuVariableTypeEnum.INT
+      ~FmuVariableTypeEnum.REAL
+      ~FmuVariableTypeEnum.BOOL
+      ~FmuVariableTypeEnum.STR
+      ~FmuVariableTypeEnum.BOOLEAN
+   
+   
