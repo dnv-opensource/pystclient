@@ -1,0 +1,32 @@
+PyStclientProcess
+=================
+
+.. currentmodule:: pystclient.api
+
+.. autoclass:: PyStclientProcess
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~PyStclientProcess.__init__
+      ~PyStclientProcess.run
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~PyStclientProcess.config_file
+      ~PyStclientProcess.delete_token
+      ~PyStclientProcess.do_login
+   
+   

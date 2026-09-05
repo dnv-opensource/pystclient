@@ -1,0 +1,66 @@
+SimulatorStatus
+===============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: SimulatorStatus
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~SimulatorStatus.__init__
+      ~SimulatorStatus.construct
+      ~SimulatorStatus.copy
+      ~SimulatorStatus.dict
+      ~SimulatorStatus.from_orm
+      ~SimulatorStatus.json
+      ~SimulatorStatus.model_construct
+      ~SimulatorStatus.model_copy
+      ~SimulatorStatus.model_dump
+      ~SimulatorStatus.model_dump_json
+      ~SimulatorStatus.model_json_schema
+      ~SimulatorStatus.model_parametrized_name
+      ~SimulatorStatus.model_post_init
+      ~SimulatorStatus.model_rebuild
+      ~SimulatorStatus.model_validate
+      ~SimulatorStatus.model_validate_json
+      ~SimulatorStatus.model_validate_strings
+      ~SimulatorStatus.parse_file
+      ~SimulatorStatus.parse_obj
+      ~SimulatorStatus.parse_raw
+      ~SimulatorStatus.schema
+      ~SimulatorStatus.schema_json
+      ~SimulatorStatus.update_forward_refs
+      ~SimulatorStatus.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulatorStatus.model_computed_fields
+      ~SimulatorStatus.model_config
+      ~SimulatorStatus.model_extra
+      ~SimulatorStatus.model_fields
+      ~SimulatorStatus.model_fields_set
+      ~SimulatorStatus.id
+      ~SimulatorStatus.type
+      ~SimulatorStatus.display_name
+      ~SimulatorStatus.status
+      ~SimulatorStatus.project_id
+      ~SimulatorStatus.simulation
+      ~SimulatorStatus.is_connected
+      ~SimulatorStatus.end_time
+      ~SimulatorStatus.simulation_time
+      ~SimulatorStatus.batch_id
+   
+   

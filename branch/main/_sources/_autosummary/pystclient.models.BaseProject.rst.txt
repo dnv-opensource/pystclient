@@ -1,0 +1,58 @@
+BaseProject
+===========
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: BaseProject
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~BaseProject.__init__
+      ~BaseProject.construct
+      ~BaseProject.copy
+      ~BaseProject.dict
+      ~BaseProject.from_orm
+      ~BaseProject.json
+      ~BaseProject.model_construct
+      ~BaseProject.model_copy
+      ~BaseProject.model_dump
+      ~BaseProject.model_dump_json
+      ~BaseProject.model_json_schema
+      ~BaseProject.model_parametrized_name
+      ~BaseProject.model_post_init
+      ~BaseProject.model_rebuild
+      ~BaseProject.model_validate
+      ~BaseProject.model_validate_json
+      ~BaseProject.model_validate_strings
+      ~BaseProject.parse_file
+      ~BaseProject.parse_obj
+      ~BaseProject.parse_raw
+      ~BaseProject.schema
+      ~BaseProject.schema_json
+      ~BaseProject.update_forward_refs
+      ~BaseProject.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~BaseProject.model_computed_fields
+      ~BaseProject.model_config
+      ~BaseProject.model_extra
+      ~BaseProject.model_fields
+      ~BaseProject.model_fields_set
+      ~BaseProject.name
+      ~BaseProject.description
+   
+   

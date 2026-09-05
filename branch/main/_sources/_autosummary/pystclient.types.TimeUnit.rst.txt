@@ -1,0 +1,26 @@
+TimeUnit
+========
+
+.. currentmodule:: pystclient.types
+
+.. autoclass:: TimeUnit
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~TimeUnit.MILLISECONDS
+      ~TimeUnit.MICROSECONDS
+      ~TimeUnit.SECONDS
+   
+   

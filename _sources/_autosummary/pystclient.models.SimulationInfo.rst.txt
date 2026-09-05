@@ -1,0 +1,66 @@
+SimulationInfo
+==============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: SimulationInfo
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~SimulationInfo.__init__
+      ~SimulationInfo.construct
+      ~SimulationInfo.copy
+      ~SimulationInfo.dict
+      ~SimulationInfo.from_orm
+      ~SimulationInfo.json
+      ~SimulationInfo.model_construct
+      ~SimulationInfo.model_copy
+      ~SimulationInfo.model_dump
+      ~SimulationInfo.model_dump_json
+      ~SimulationInfo.model_json_schema
+      ~SimulationInfo.model_parametrized_name
+      ~SimulationInfo.model_post_init
+      ~SimulationInfo.model_rebuild
+      ~SimulationInfo.model_validate
+      ~SimulationInfo.model_validate_json
+      ~SimulationInfo.model_validate_strings
+      ~SimulationInfo.parse_file
+      ~SimulationInfo.parse_obj
+      ~SimulationInfo.parse_raw
+      ~SimulationInfo.schema
+      ~SimulationInfo.schema_json
+      ~SimulationInfo.update_forward_refs
+      ~SimulationInfo.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulationInfo.model_computed_fields
+      ~SimulationInfo.model_config
+      ~SimulationInfo.model_extra
+      ~SimulationInfo.model_fields
+      ~SimulationInfo.model_fields_set
+      ~SimulationInfo.id
+      ~SimulationInfo.name
+      ~SimulationInfo.simulator
+      ~SimulationInfo.created
+      ~SimulationInfo.project_id
+      ~SimulationInfo.simulation_type
+      ~SimulationInfo.parameter_set_name
+      ~SimulationInfo.simulation_time
+      ~SimulationInfo.has_time_series_data
+      ~SimulationInfo.batch_id
+   
+   

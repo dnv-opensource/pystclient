@@ -1,0 +1,61 @@
+FmuVariable
+===========
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuVariable
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuVariable.__init__
+      ~FmuVariable.construct
+      ~FmuVariable.copy
+      ~FmuVariable.dict
+      ~FmuVariable.from_orm
+      ~FmuVariable.json
+      ~FmuVariable.model_construct
+      ~FmuVariable.model_copy
+      ~FmuVariable.model_dump
+      ~FmuVariable.model_dump_json
+      ~FmuVariable.model_json_schema
+      ~FmuVariable.model_parametrized_name
+      ~FmuVariable.model_post_init
+      ~FmuVariable.model_rebuild
+      ~FmuVariable.model_validate
+      ~FmuVariable.model_validate_json
+      ~FmuVariable.model_validate_strings
+      ~FmuVariable.parse_file
+      ~FmuVariable.parse_obj
+      ~FmuVariable.parse_raw
+      ~FmuVariable.schema
+      ~FmuVariable.schema_json
+      ~FmuVariable.update_forward_refs
+      ~FmuVariable.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuVariable.model_computed_fields
+      ~FmuVariable.model_config
+      ~FmuVariable.model_extra
+      ~FmuVariable.model_fields
+      ~FmuVariable.model_fields_set
+      ~FmuVariable.name
+      ~FmuVariable.causality
+      ~FmuVariable.start_value
+      ~FmuVariable.variability
+      ~FmuVariable.value_type
+   
+   

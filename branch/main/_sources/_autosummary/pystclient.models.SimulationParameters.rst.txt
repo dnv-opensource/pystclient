@@ -1,0 +1,62 @@
+SimulationParameters
+====================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: SimulationParameters
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~SimulationParameters.__init__
+      ~SimulationParameters.construct
+      ~SimulationParameters.copy
+      ~SimulationParameters.dict
+      ~SimulationParameters.from_orm
+      ~SimulationParameters.from_response
+      ~SimulationParameters.json
+      ~SimulationParameters.model_construct
+      ~SimulationParameters.model_copy
+      ~SimulationParameters.model_dump
+      ~SimulationParameters.model_dump_json
+      ~SimulationParameters.model_json_schema
+      ~SimulationParameters.model_parametrized_name
+      ~SimulationParameters.model_post_init
+      ~SimulationParameters.model_rebuild
+      ~SimulationParameters.model_validate
+      ~SimulationParameters.model_validate_json
+      ~SimulationParameters.model_validate_strings
+      ~SimulationParameters.parse_file
+      ~SimulationParameters.parse_obj
+      ~SimulationParameters.parse_raw
+      ~SimulationParameters.schema
+      ~SimulationParameters.schema_json
+      ~SimulationParameters.to_dict
+      ~SimulationParameters.update_forward_refs
+      ~SimulationParameters.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulationParameters.model_computed_fields
+      ~SimulationParameters.model_config
+      ~SimulationParameters.model_extra
+      ~SimulationParameters.model_fields
+      ~SimulationParameters.model_fields_set
+      ~SimulationParameters.config_name
+      ~SimulationParameters.base_step_size
+      ~SimulationParameters.end_time
+      ~SimulationParameters.model_parameters
+   
+   

@@ -1,0 +1,25 @@
+﻿pystclient.types
+================
+
+.. automodule:: pystclient.types
+   :members:
+   :exclude-members: FmuCausalityType,FmuVariableTypeEnum,SimulationType,TimeUnit,
+   
+
+
+   
+   .. rubric:: Functions
+   .. autosummary::
+   
+      from_string_value
+   
+   .. rubric:: Classes
+   .. autosummary::
+      :toctree:
+      :template: custom-class.rst
+   
+      FmuCausalityType
+      FmuVariableTypeEnum
+      SimulationType
+      TimeUnit
+   

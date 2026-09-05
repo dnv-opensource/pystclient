@@ -1,0 +1,33 @@
+MeasurementClient
+=================
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: MeasurementClient
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~MeasurementClient.__init__
+      ~MeasurementClient.measurement
+      ~MeasurementClient.measurements
+      ~MeasurementClient.query
+      ~MeasurementClient.simulation_results
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~MeasurementClient.session
+   
+   

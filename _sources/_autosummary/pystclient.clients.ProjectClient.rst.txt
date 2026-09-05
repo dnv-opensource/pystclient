@@ -1,0 +1,51 @@
+ProjectClient
+=============
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: ProjectClient
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~ProjectClient.__init__
+      ~ProjectClient.completed_simulations
+      ~ProjectClient.completed_simulations_by_batch_id
+      ~ProjectClient.connections
+      ~ProjectClient.create
+      ~ProjectClient.create_connections
+      ~ProjectClient.current_simulators
+      ~ProjectClient.delete
+      ~ProjectClient.delete_parameters
+      ~ProjectClient.deselect_all_models
+      ~ProjectClient.fmu_variables
+      ~ProjectClient.fmus
+      ~ProjectClient.info
+      ~ProjectClient.info_all
+      ~ProjectClient.log_config
+      ~ProjectClient.parameter
+      ~ProjectClient.parameter_names
+      ~ProjectClient.parameters
+      ~ProjectClient.parameters_including_causality
+      ~ProjectClient.select_models
+      ~ProjectClient.update_log_config
+      ~ProjectClient.update_parameters
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~ProjectClient.model_client
+      ~ProjectClient.session
+   
+   
