@@ -1,0 +1,20 @@
+﻿pystclient.exception
+====================
+
+.. automodule:: pystclient.exception
+   :members:
+
+
+   
+   .. rubric:: Exceptions
+   .. autosummary::
+   
+      APIResponseError
+      ConfigurationNotFoundError
+      FmuModelNotFoundError
+      MalformedConnectionsError
+      MissingVariablesError
+      PyStclientError
+      UnexpectedResponseDataError
+      UnknownError
+   

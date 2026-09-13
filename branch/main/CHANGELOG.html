@@ -1,0 +1,728 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Style Guide" href="STYLEGUIDE.html"><link rel="prev" title="pystclient - CLI interface" href="cli.__main__.html">
+        <link rel="prefetch" href="_static/pystclient.svg" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Changelog - pystclient 0.0.5</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_argparse_cli.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">pystclient 0.0.5</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/pystclient.svg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">pystclient 0.0.5</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">Pystclient - A Python client for Simulation Trust Center (STC)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input aria-label="Toggle navigation of API Reference" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="pystclient.html">pystclient package</a><input aria-label="Toggle navigation of pystclient package" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/pystclient.resources.html">pystclient.resources</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autosummary/pystclient.utils.html">pystclient.utils</a><input aria-label="Toggle navigation of pystclient.utils" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.utils.helpers.html">pystclient.utils.helpers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.utils.logging.html">pystclient.utils.logging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.utils.time.html">pystclient.utils.time</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autosummary/pystclient.api.html">pystclient.api</a><input aria-label="Toggle navigation of pystclient.api" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.api.PyStclientProcess.html">PyStclientProcess</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autosummary/pystclient.clients.html">pystclient.clients</a><input aria-label="Toggle navigation of pystclient.clients" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.BaseClient.html">BaseClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.HandleAuthentication.html">HandleAuthentication</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.MeasurementClient.html">MeasurementClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.ModelClient.html">ModelClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.ProjectClient.html">ProjectClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.PyStclient.html">PyStclient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.SimulationResults.html">SimulationResults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.clients.SimulatorClient.html">SimulatorClient</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/pystclient.exception.html">pystclient.exception</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autosummary/pystclient.models.html">pystclient.models</a><input aria-label="Toggle navigation of pystclient.models" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.BaseProject.html">BaseProject</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuConnections.html">FmuConnections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuModelInformation.html">FmuModelInformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuNode.html">FmuNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuNodeEdge.html">FmuNodeEdge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuSelect.html">FmuSelect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuVariable.html">FmuVariable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuVariableGroup.html">FmuVariableGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.FmuVariables.html">FmuVariables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.LoggingConfiguration.html">LoggingConfiguration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.MeasurementInstance.html">MeasurementInstance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.MeasurementMetadata.html">MeasurementMetadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.MeasurementQuery.html">MeasurementQuery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.MeasurementVariables.html">MeasurementVariables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.Measurements.html">Measurements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.ModelParameters.html">ModelParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.ModelVariable.html">ModelVariable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.ProjectInformation.html">ProjectInformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.QueryResult.html">QueryResult</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.QueryVariable.html">QueryVariable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.Simulation.html">Simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.SimulationConfig.html">SimulationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.SimulationInfo.html">SimulationInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.SimulationParameters.html">SimulationParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.SimulatorStatus.html">SimulatorStatus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.models.UploadedModelInfo.html">UploadedModelInfo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/pystclient.settings.html">pystclient.settings</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autosummary/pystclient.types.html">pystclient.types</a><input aria-label="Toggle navigation of pystclient.types" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.types.FmuCausalityType.html">FmuCausalityType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.types.FmuVariableTypeEnum.html">FmuVariableTypeEnum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.types.SimulationType.html">SimulationType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/pystclient.types.TimeUnit.html">TimeUnit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="cli.html">CLI Documentation</a><input aria-label="Toggle navigation of CLI Documentation" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="cli.__main__.html">pystclient - CLI interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="STYLEGUIDE.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LICENSE.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LICENSE.html#mozilla-public-license-version-2-0">Mozilla Public License Version 2.0</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/CHANGELOG.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
+<p>All notable changes to the <a class="reference external" href="https://github.com/dnv-opensource/pystclient">pystclient</a> project will be documented in this file.<br>
+The changelog format is based on <a class="reference external" href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>.</p>
+<section id="unreleased">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/compare/v0.0.5...HEAD">Unreleased</a><a class="headerlink" href="#unreleased" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>-/-</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/compare/v0.0.4...v0.0.5">0.0.5</a> - 2026-05-07<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<section id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Changed the approach how dynamic versioning is realised</p>
+<ul>
+<li><p>Old:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pystclient/__about__.py</span></code> was single source of truth for version number.</p></li>
+<li><p>Version inside <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> was dynamically resolved via <code class="docutils literal notranslate"><span class="pre">hatch.version</span></code>.</p></li>
+</ul>
+</li>
+<li><p>New:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> is single source of truth for version number.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__version__</span></code> attribute inside <code class="docutils literal notranslate"><span class="pre">src/pystclient/__init__.py</span></code> gets dynamically resolved from project metadata</p></li>
+</ul>
+</li>
+<li><p>NOTE: Project metadata (and hence the project version number) gets populated with data from <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> whenever the package is installed in the local environment, i.e. with every call to <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">sync</span></code>, <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span></code>, or when a user installs the package via pip.
+This means: As long as the package is <em>installed</em> (even when installed in “just” editable mode) the dynamic resolution of the version number from <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> as single source of truth works just fine.
+With that, the dynamic version is reliably resolved independent of whether or not the package is actually being <em>built</em> (as in the former approach, via <code class="docutils literal notranslate"><span class="pre">hatch.version</span></code>). It is now sufficient that the package is <em>installed</em> in the local environment. Only in the hypothetical case that one runs code from the package directly from source, without installing the package beforehand, the version resolution would fail. However, using code from a package without installing it has, latest since the advent of <code class="docutils literal notranslate"><span class="pre">uv</span></code>, become a very uncommon case.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/compare/v0.0.3...v0.0.4">0.0.4</a> - 2026-05-04<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h3>Changed<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>GitHub Workflows:</p>
+<ul>
+<li><p>Added ‘name: Checkout code’ to uses of ‘actions/checkout’, for better readability and consistency across workflow files.</p></li>
+<li><p>Added ‘name: Download build artifacts’ to uses of ‘actions/download-artifact’, for better readability and consistency across workflow files.</p></li>
+<li><p>Added ‘name: Publish to PyPI’ to uses of ‘pypa/gh-action-pypi-publish’, for better readability and consistency across workflow files.</p></li>
+<li><p>Added ‘name: Upload build artifacts’ to uses of ‘actions/upload-artifact’, for better readability and consistency across workflow files.</p></li>
+<li><p>Changed ‘uv sync –upgrade’ to ‘uv sync -U’</p></li>
+<li><p>Ensured that actions ‘upload-artifact’ and ‘download-artifact’ uniformly specify ‘dist’ as (file)name for the artifact uploaded (or downloaded, respectively), for consistency across workflow files.</p></li>
+<li><p>pull_request_to_main.yml and nightly_build.yml: Added ‘workflow_dispatch:’ in selected workflows to allow manual trigger of the workflow.</p></li>
+<li><p>Removed redundant ‘Set up Python’ steps (no longer needed, as ‘uv sync’ will automatically install Python if not present).</p></li>
+<li><p>Replaced ‘Build source distribution and wheel’ with ‘Build source distribution and wheels’ (plural) in workflow step names.</p></li>
+<li><p>Replaced ‘Run twine check’ with ‘Check build artifacts’ in workflow step names, to better reflect the purpose of the step.</p></li>
+<li><p>Updated the syntax used for the OS and Python matrix in test workflows.</p></li>
+</ul>
+</li>
+<li><p>pyproject.toml:</p>
+<ul>
+<li><p>Removed upper version constraint from required Python version, i.e. changed the “requires-python” field from “&gt;= 3.11, &lt; 3.15” to “&gt;= 3.11”. <br>
+Detailed background and reasoning in this good yet long post by Henry Schreiner:
+https://iscinumpy.dev/post/bound-version-constraints/#pinning-the-python-version-is-special <br>
+TLDR: Placing an upper Python version constraint on a Python package causes more harm than it provides benefits.
+The upper version constraint unnecessarily manifests incompatibility with future Python releases.
+Removing the upper version constraint ensures the package remains installable as Python evolves.
+In the majority of cases, the newer Python version will anyhow be backward-compatible. And in the rare case where your package would really not work with a newer Python version,
+users can at least find a solution manually to resolve the conflict, e.g. by pinning your package to the last version compatible with the environment they install it in.
+That way, we ensure it remains <em>possible</em> for users to find a solution, instead of rendering it impossible forever.</p></li>
+</ul>
+</li>
+<li><p>VS Code Settings (Recommended extensions):</p>
+<ul>
+<li><p>Removed ‘njqdev.vscode-python-typehint’ (Python Type Hint). Not maintained since 1 year, and the functionality is now covered by GitHub Copilot.</p></li>
+<li><p>Added ‘ms-python.debugpy’ (Python Debugger).</p></li>
+<li><p>Added ‘ms-python.vscode-python-envs’ (Python Environments).</p></li>
+</ul>
+</li>
+<li><p>Python modules: Changed <code class="docutils literal notranslate"><span class="pre">__ALL__</span></code> to <code class="docutils literal notranslate"><span class="pre">__all__</span></code> (lowercase, PEP8 and PEP257 compliant).</p></li>
+<li><p>Updated code base with latest changes in python_project_template v0.2.11</p></li>
+</ul>
+</section>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Added pip-system-certs&gt;=5.3 to dev dependency-group</p></li>
+<li><p>.pre-commit-config.yaml: Updated rev of ruff-pre-commit to v0.15.9</p></li>
+<li><p>Updated to authlib&gt;=1.6.9</p></li>
+<li><p>Updated to dictIO&gt;=0.4.4</p></li>
+<li><p>Updated to edn-format&gt;=0.7.5</p></li>
+<li><p>Updated to furo&gt;=2025.12</p></li>
+<li><p>Updated to jupyter&gt;=1.1.1</p></li>
+<li><p>Updated to mypy&gt;=1.19.1</p></li>
+<li><p>Updated to myst-parser&gt;=5.0</p></li>
+<li><p>Updated to pip-system-certs&gt;=5.3</p></li>
+<li><p>Updated to pre-commit&gt;=4.5</p></li>
+<li><p>Updated to pydantic&gt;=2.12</p></li>
+<li><p>Updated to pyright&gt;=1.1.408</p></li>
+<li><p>Updated to pytest-cov&gt;=7.1</p></li>
+<li><p>Updated to pytest&gt;=9.0</p></li>
+<li><p>Updated to python-dotenv&gt;=1.2.2</p></li>
+<li><p>Updated to requests&gt;=2.33</p></li>
+<li><p>Updated to ruff&gt;=0.15.9</p></li>
+<li><p>Updated to sourcery&gt;=1.43.0</p></li>
+<li><p>Updated to sphinx-argparse-cli&gt;=1.21.3</p></li>
+<li><p>Updated to sphinx-autodoc-typehints&gt;=3.6</p></li>
+<li><p>Updated to Sphinx&gt;=9.0</p></li>
+<li><p>Updated to sphinxcontrib-mermaid&gt;=2.0</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/compare/v0.0.2...v0.0.3">0.0.3</a> - 2025-12-02<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<section id="added">
+<h3>Added<a class="headerlink" href="#added" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Added support for Python 3.14</p></li>
+<li><p>Added docstrings:</p>
+<ul>
+<li><p>Module docstrings (D100): Added to 7 public modules (clients, exception, misc, models, settings, types, utils/time)</p></li>
+<li><p>Class docstrings (D101): Added to 32 classes across exception, models, and types modules</p></li>
+<li><p>Method docstrings (D102): Added to 50+ public methods in api, clients, and models modules</p></li>
+<li><p>Function docstrings (D103): Added to 8 utility functions in misc and utils/time</p></li>
+<li><p>Magic method docstrings (D105): Added to <code class="docutils literal notranslate"><span class="pre">__init__</span></code>, <code class="docutils literal notranslate"><span class="pre">__iter__</span></code>, <code class="docutils literal notranslate"><span class="pre">__next__</span></code>, <code class="docutils literal notranslate"><span class="pre">__hash__</span></code></p></li>
+<li><p>ruff.toml: Removed D100-D105 from ignore list</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Removed support for Python 3.10</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>Changed<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Changed from <code class="docutils literal notranslate"><span class="pre">pip</span></code>/<code class="docutils literal notranslate"><span class="pre">tox</span></code> to <code class="docutils literal notranslate"><span class="pre">uv</span></code> as package manager</p></li>
+<li><p>Updated code base to latest changes in python_project_template v0.2.4</p></li>
+<li><p>Refactored tests, and partly refactored pystclient code for better typing</p></li>
+<li><p>README.md : Completely rewrote section “Development Setup”, introducing <code class="docutils literal notranslate"><span class="pre">uv</span></code> as package manager.</p></li>
+<li><p>Changed publishing workflow to use OpenID Connect (Trusted Publisher Management) when publishing to PyPI</p></li>
+<li><p>pyproject.toml:</p>
+<ul>
+<li><p>added required-environments to uv.tools (windows, linux, macos)</p></li>
+<li><p>updated required Python version to “&gt;= 3.11, &lt; 3.15”</p></li>
+<li><p>updated supported Python versions to 3.11, 3.12, 3.13, 3.14</p></li>
+<li><p>Changed build-backend from “setuptools.build_meta” to “hatchling”</p></li>
+<li><p>removed leading carets and trailing slashes from ‘exclude’ paths</p></li>
+</ul>
+</li>
+<li><p>GitHub workflow _test.yml:</p>
+<ul>
+<li><p>updated Python versions in test matrix to 3.11, 3.12, 3.13, 3.14</p></li>
+</ul>
+</li>
+<li><p>GitHub workflow _test_future.yml:</p>
+<ul>
+<li><p>updated Python version in test_future to 3.15.0-alpha - 3.15.0</p></li>
+<li><p>Improved the regex and PowerShell code that finds and removes the Python upper version constraint in pyproject.toml</p></li>
+</ul>
+</li>
+<li><p>Added .pre-commit-config.yaml</p></li>
+<li><p>Added .sourcery.yaml</p></li>
+<li><p>Sphinx conf.py:</p>
+<ul>
+<li><p>removed ruff rule exception on file level</p></li>
+</ul>
+</li>
+<li><p>ruff.toml:</p>
+<ul>
+<li><p>updated target Python version to “py311”</p></li>
+</ul>
+</li>
+<li><p>VS Code settings:</p>
+<ul>
+<li><p>Turned off automatic venv activation</p></li>
+<li><p>(Recommended extensions) Removed deprecated IntelliCode extension and replaced it by GitHub Copilot Chat as recommended replacement.</p></li>
+<li><p>Updated ‘mypy-type-checker.reportingScope’ to ‘custom’.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="resolved">
+<h3>Resolved<a class="headerlink" href="#resolved" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Resolved ruff and pyright errors</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Dependencies<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Updated to pydantic&gt;=2.12  (from pydantic~=2.11.4)</p></li>
+<li><p>Updated to ruff&gt;=0.14.3  (from ruff&gt;=0.3.0)</p></li>
+<li><p>Updated to pyright&gt;=1.1.407  (from pyright&gt;=1.1.352)</p></li>
+<li><p>Added mypy&gt;=1.18</p></li>
+<li><p>Added sourcery&gt;=1.40</p></li>
+<li><p>Added pre-commit&gt;=4.3</p></li>
+<li><p>Replaced notebook&gt;=7.4.2 by jupyter&gt;=1.1  (jupyter includes notebook)</p></li>
+<li><p>Updated to matplotlib&gt;=3.10  (from matplotlib&gt;=3.10.3)</p></li>
+<li><p>Updated to Authlib&gt;=1.6.5  (from Authlib~=1.5.0)</p></li>
+<li><p>Updated to requests&gt;=2.32  (from requests~=2.32.3)</p></li>
+<li><p>Updated to dictIO&gt;=0.4.2  (from dictIO&gt;=0.3.3)</p></li>
+<li><p>Updated to pytest&gt;=8.4  (from pytest&gt;=7.4)</p></li>
+<li><p>Updated to pytest-cov&gt;=7.0  (from pytest-cov&gt;=4.1)</p></li>
+<li><p>Updated to Sphinx&gt;=8.2  (from Sphinx&gt;=7.2)</p></li>
+<li><p>Updated to sphinx-argparse-cli&gt;=1.20  (from sphinx-argparse-cli&gt;=1.11)</p></li>
+<li><p>Updated to sphinx-autodoc-typehints&gt;=3.5  (from sphinx-autodoc-typehints&gt;=2.5)</p></li>
+<li><p>Updated to myst-parser&gt;=4.0  (from myst-parser&gt;=2.0)</p></li>
+<li><p>Updated to furo&gt;=2025.9  (from furo&gt;=2023.9.10)</p></li>
+<li><p>Updated to checkout&#64;v5  (from checkout&#64;v4)</p></li>
+<li><p>Updated to setup-python&#64;v6  (from setup-python&#64;v4)</p></li>
+<li><p>Updated to setup-uv&#64;v7  (from setup-uv&#64;v2)</p></li>
+<li><p>Updated to peaceiris/actions-gh-pages&#64;v4  (from peaceiris/actions-gh-pages&#64;v3)</p></li>
+<li><p>Updated to upload-artifact&#64;v5  (from upload-artifact&#64;v3)</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/compare/v0.0.1...v0.0.2">0.0.2</a> - 2024-02-22<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h3>Added<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>README.md : Under <code class="docutils literal notranslate"><span class="pre">Development</span> <span class="pre">Setup</span></code>, added a step to install current package in “editable” mode, using the pip install -e option.
+This removes the need to manually add /src to the PythonPath environment variable in order for debugging and tests to work.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Removed<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>VS Code settings: Removed the setting which added the /src folder to PythonPath. This is no longer necessary. Installing the project itself as a package in “editable” mode, using the pip install -e option, solves the issue and removes the need to manually add /src to the PythonPath environment variable.</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Changed<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Moved all project configuration from setup.cfg to pyproject.toml</p></li>
+<li><p>Moved all tox configuration from setup.cfg to tox.ini.</p></li>
+<li><p>Moved pytest configuration from pyproject.toml to pytest.ini</p></li>
+<li><p>Deleted setup.cfg</p></li>
+<li><p>replaced black formatter with ruff formatter</p></li>
+<li><p>VS Code settings: Turned off automatic venv activation</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Dependencies<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>updated to ruff==0.3.0  (from ruff==0.2.1)</p></li>
+<li><p>updated to pyright==1.1.352  (from pyright==1.1.350)</p></li>
+<li><p>updated to dictIO&gt;=0.3.3  (from dictIO&gt;=0.3.1)</p></li>
+<li><p>updated to black[jupyter]==24.1  (from black[jupyter]==23.12)</p></li>
+<li><p>updated to sourcery==1.15  (from sourcery==1.14)</p></li>
+<li><p>removed black</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h2><a class="reference external" href="https://github.com/dnv-opensource/pystclient/releases/tag/v0.0.1">0.0.1</a> - 2023-02-21<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Initial release</p></li>
+</ul>
+<section id="id13">
+<h3>Added<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>added this</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>Changed<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>changed that</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>Dependencies<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>updated to some_package_on_pypi&gt;=0.1.0</p></li>
+</ul>
+</section>
+<section id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fixed issue #12345</p></li>
+</ul>
+</section>
+<section id="deprecated">
+<h3>Deprecated<a class="headerlink" href="#deprecated" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>following features will soon be removed and have been marked as deprecated:</p>
+<ul>
+<li><p>function x in module z</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id16">
+<h3>Removed<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>following features have been removed:</p>
+<ul>
+<li><p>function y in module z</p></li>
+</ul>
+</li>
+</ul>
+<!-- Markdown link & img dfn's -->
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="STYLEGUIDE.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Style Guide</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="cli.__main__.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">pystclient - CLI interface</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, DNV AS. All rights reserved.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Changelog</a><ul>
+<li><a class="reference internal" href="#unreleased">Unreleased</a></li>
+<li><a class="reference internal" href="#id1">0.0.5 - 2026-05-07</a><ul>
+<li><a class="reference internal" href="#changed">Changed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">0.0.4 - 2026-05-04</a><ul>
+<li><a class="reference internal" href="#id3">Changed</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">0.0.3 - 2025-12-02</a><ul>
+<li><a class="reference internal" href="#added">Added</a></li>
+<li><a class="reference internal" href="#removed">Removed</a></li>
+<li><a class="reference internal" href="#id5">Changed</a></li>
+<li><a class="reference internal" href="#resolved">Resolved</a></li>
+<li><a class="reference internal" href="#id6">Dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">0.0.2 - 2024-02-22</a><ul>
+<li><a class="reference internal" href="#id8">Added</a></li>
+<li><a class="reference internal" href="#id9">Removed</a></li>
+<li><a class="reference internal" href="#id10">Changed</a></li>
+<li><a class="reference internal" href="#id11">Dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id12">0.0.1 - 2023-02-21</a><ul>
+<li><a class="reference internal" href="#id13">Added</a></li>
+<li><a class="reference internal" href="#id14">Changed</a></li>
+<li><a class="reference internal" href="#id15">Dependencies</a></li>
+<li><a class="reference internal" href="#fixed">Fixed</a></li>
+<li><a class="reference internal" href="#deprecated">Deprecated</a></li>
+<li><a class="reference internal" href="#id16">Removed</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=282f96c0"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    </body>
+</html>

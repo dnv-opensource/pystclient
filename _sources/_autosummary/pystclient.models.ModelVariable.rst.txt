@@ -1,0 +1,59 @@
+ModelVariable
+=============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: ModelVariable
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~ModelVariable.__init__
+      ~ModelVariable.construct
+      ~ModelVariable.copy
+      ~ModelVariable.dict
+      ~ModelVariable.from_orm
+      ~ModelVariable.json
+      ~ModelVariable.model_construct
+      ~ModelVariable.model_copy
+      ~ModelVariable.model_dump
+      ~ModelVariable.model_dump_json
+      ~ModelVariable.model_json_schema
+      ~ModelVariable.model_parametrized_name
+      ~ModelVariable.model_post_init
+      ~ModelVariable.model_rebuild
+      ~ModelVariable.model_validate
+      ~ModelVariable.model_validate_json
+      ~ModelVariable.model_validate_strings
+      ~ModelVariable.parse_file
+      ~ModelVariable.parse_obj
+      ~ModelVariable.parse_raw
+      ~ModelVariable.schema
+      ~ModelVariable.schema_json
+      ~ModelVariable.update_forward_refs
+      ~ModelVariable.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~ModelVariable.model_computed_fields
+      ~ModelVariable.model_config
+      ~ModelVariable.model_extra
+      ~ModelVariable.model_fields
+      ~ModelVariable.model_fields_set
+      ~ModelVariable.name
+      ~ModelVariable.type
+      ~ModelVariable.initial_value
+   
+   
