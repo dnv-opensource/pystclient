@@ -1,0 +1,64 @@
+MeasurementInstance
+===================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: MeasurementInstance
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~MeasurementInstance.__init__
+      ~MeasurementInstance.construct
+      ~MeasurementInstance.copy
+      ~MeasurementInstance.dict
+      ~MeasurementInstance.from_orm
+      ~MeasurementInstance.json
+      ~MeasurementInstance.model_construct
+      ~MeasurementInstance.model_copy
+      ~MeasurementInstance.model_dump
+      ~MeasurementInstance.model_dump_json
+      ~MeasurementInstance.model_json_schema
+      ~MeasurementInstance.model_parametrized_name
+      ~MeasurementInstance.model_post_init
+      ~MeasurementInstance.model_rebuild
+      ~MeasurementInstance.model_validate
+      ~MeasurementInstance.model_validate_json
+      ~MeasurementInstance.model_validate_strings
+      ~MeasurementInstance.parse_file
+      ~MeasurementInstance.parse_obj
+      ~MeasurementInstance.parse_raw
+      ~MeasurementInstance.schema
+      ~MeasurementInstance.schema_json
+      ~MeasurementInstance.update_forward_refs
+      ~MeasurementInstance.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~MeasurementInstance.model_computed_fields
+      ~MeasurementInstance.model_config
+      ~MeasurementInstance.model_extra
+      ~MeasurementInstance.model_fields
+      ~MeasurementInstance.model_fields_set
+      ~MeasurementInstance.description
+      ~MeasurementInstance.fmu_id
+      ~MeasurementInstance.instance_name
+      ~MeasurementInstance.name
+      ~MeasurementInstance.variables
+      ~MeasurementInstance.instance_id
+      ~MeasurementInstance.author
+      ~MeasurementInstance.version
+   
+   

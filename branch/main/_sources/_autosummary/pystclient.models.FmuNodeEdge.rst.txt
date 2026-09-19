@@ -1,0 +1,63 @@
+FmuNodeEdge
+===========
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuNodeEdge
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuNodeEdge.__init__
+      ~FmuNodeEdge.construct
+      ~FmuNodeEdge.copy
+      ~FmuNodeEdge.dict
+      ~FmuNodeEdge.from_orm
+      ~FmuNodeEdge.json
+      ~FmuNodeEdge.model_construct
+      ~FmuNodeEdge.model_copy
+      ~FmuNodeEdge.model_dump
+      ~FmuNodeEdge.model_dump_json
+      ~FmuNodeEdge.model_json_schema
+      ~FmuNodeEdge.model_parametrized_name
+      ~FmuNodeEdge.model_post_init
+      ~FmuNodeEdge.model_rebuild
+      ~FmuNodeEdge.model_validate
+      ~FmuNodeEdge.model_validate_json
+      ~FmuNodeEdge.model_validate_strings
+      ~FmuNodeEdge.parse_file
+      ~FmuNodeEdge.parse_obj
+      ~FmuNodeEdge.parse_raw
+      ~FmuNodeEdge.schema
+      ~FmuNodeEdge.schema_json
+      ~FmuNodeEdge.update_forward_refs
+      ~FmuNodeEdge.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuNodeEdge.data
+      ~FmuNodeEdge.model_computed_fields
+      ~FmuNodeEdge.model_config
+      ~FmuNodeEdge.model_extra
+      ~FmuNodeEdge.model_fields
+      ~FmuNodeEdge.model_fields_set
+      ~FmuNodeEdge.value_type
+      ~FmuNodeEdge.id
+      ~FmuNodeEdge.source
+      ~FmuNodeEdge.source_handle
+      ~FmuNodeEdge.target
+      ~FmuNodeEdge.target_handle
+   
+   

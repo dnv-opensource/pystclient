@@ -1,0 +1,61 @@
+MeasurementQuery
+================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: MeasurementQuery
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~MeasurementQuery.__init__
+      ~MeasurementQuery.check_one_exists
+      ~MeasurementQuery.construct
+      ~MeasurementQuery.copy
+      ~MeasurementQuery.dict
+      ~MeasurementQuery.from_orm
+      ~MeasurementQuery.json
+      ~MeasurementQuery.model_construct
+      ~MeasurementQuery.model_copy
+      ~MeasurementQuery.model_dump
+      ~MeasurementQuery.model_dump_json
+      ~MeasurementQuery.model_json_schema
+      ~MeasurementQuery.model_parametrized_name
+      ~MeasurementQuery.model_post_init
+      ~MeasurementQuery.model_rebuild
+      ~MeasurementQuery.model_validate
+      ~MeasurementQuery.model_validate_json
+      ~MeasurementQuery.model_validate_strings
+      ~MeasurementQuery.parse_file
+      ~MeasurementQuery.parse_obj
+      ~MeasurementQuery.parse_raw
+      ~MeasurementQuery.schema
+      ~MeasurementQuery.schema_json
+      ~MeasurementQuery.update_forward_refs
+      ~MeasurementQuery.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~MeasurementQuery.model_computed_fields
+      ~MeasurementQuery.model_config
+      ~MeasurementQuery.model_extra
+      ~MeasurementQuery.model_fields
+      ~MeasurementQuery.model_fields_set
+      ~MeasurementQuery.variables
+      ~MeasurementQuery.time_from
+      ~MeasurementQuery.time_to
+      ~MeasurementQuery.window_period
+   
+   

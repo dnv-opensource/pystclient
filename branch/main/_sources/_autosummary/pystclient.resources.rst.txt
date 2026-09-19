@@ -1,0 +1,8 @@
+﻿pystclient.resources
+====================
+
+.. automodule:: pystclient.resources
+   :members:
+
+
+   
