@@ -1,0 +1,60 @@
+MeasurementMetadata
+===================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: MeasurementMetadata
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~MeasurementMetadata.__init__
+      ~MeasurementMetadata.construct
+      ~MeasurementMetadata.copy
+      ~MeasurementMetadata.dict
+      ~MeasurementMetadata.from_orm
+      ~MeasurementMetadata.json
+      ~MeasurementMetadata.model_construct
+      ~MeasurementMetadata.model_copy
+      ~MeasurementMetadata.model_dump
+      ~MeasurementMetadata.model_dump_json
+      ~MeasurementMetadata.model_json_schema
+      ~MeasurementMetadata.model_parametrized_name
+      ~MeasurementMetadata.model_post_init
+      ~MeasurementMetadata.model_rebuild
+      ~MeasurementMetadata.model_validate
+      ~MeasurementMetadata.model_validate_json
+      ~MeasurementMetadata.model_validate_strings
+      ~MeasurementMetadata.parse_file
+      ~MeasurementMetadata.parse_obj
+      ~MeasurementMetadata.parse_raw
+      ~MeasurementMetadata.schema
+      ~MeasurementMetadata.schema_json
+      ~MeasurementMetadata.update_forward_refs
+      ~MeasurementMetadata.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~MeasurementMetadata.model_computed_fields
+      ~MeasurementMetadata.model_config
+      ~MeasurementMetadata.model_extra
+      ~MeasurementMetadata.model_fields
+      ~MeasurementMetadata.model_fields_set
+      ~MeasurementMetadata.start_time
+      ~MeasurementMetadata.end_time
+      ~MeasurementMetadata.measurement
+      ~MeasurementMetadata.instances
+   
+   
