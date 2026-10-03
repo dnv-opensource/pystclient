@@ -1,0 +1,63 @@
+Measurements
+============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: Measurements
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~Measurements.__init__
+      ~Measurements.construct
+      ~Measurements.copy
+      ~Measurements.dict
+      ~Measurements.from_orm
+      ~Measurements.json
+      ~Measurements.model_construct
+      ~Measurements.model_copy
+      ~Measurements.model_dump
+      ~Measurements.model_dump_json
+      ~Measurements.model_json_schema
+      ~Measurements.model_parametrized_name
+      ~Measurements.model_post_init
+      ~Measurements.model_rebuild
+      ~Measurements.model_validate
+      ~Measurements.model_validate_json
+      ~Measurements.model_validate_strings
+      ~Measurements.parse_file
+      ~Measurements.parse_obj
+      ~Measurements.parse_raw
+      ~Measurements.schema
+      ~Measurements.schema_json
+      ~Measurements.update_forward_refs
+      ~Measurements.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~Measurements.model_computed_fields
+      ~Measurements.model_config
+      ~Measurements.model_extra
+      ~Measurements.model_fields
+      ~Measurements.model_fields_set
+      ~Measurements.id
+      ~Measurements.simulation_id
+      ~Measurements.created_at
+      ~Measurements.metadata
+      ~Measurements.filename
+      ~Measurements.parameter_set_name
+      ~Measurements.simulation_name
+   
+   

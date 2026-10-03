@@ -1,0 +1,8 @@
+﻿pystclient.settings
+===================
+
+.. automodule:: pystclient.settings
+   :members:
+
+
+   

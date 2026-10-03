@@ -1,0 +1,62 @@
+ModelParameters
+===============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: ModelParameters
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~ModelParameters.__init__
+      ~ModelParameters.construct
+      ~ModelParameters.copy
+      ~ModelParameters.dict
+      ~ModelParameters.from_orm
+      ~ModelParameters.json
+      ~ModelParameters.model_construct
+      ~ModelParameters.model_copy
+      ~ModelParameters.model_dump
+      ~ModelParameters.model_dump_json
+      ~ModelParameters.model_json_schema
+      ~ModelParameters.model_parametrized_name
+      ~ModelParameters.model_post_init
+      ~ModelParameters.model_rebuild
+      ~ModelParameters.model_validate
+      ~ModelParameters.model_validate_json
+      ~ModelParameters.model_validate_strings
+      ~ModelParameters.parse_file
+      ~ModelParameters.parse_obj
+      ~ModelParameters.parse_raw
+      ~ModelParameters.schema
+      ~ModelParameters.schema_json
+      ~ModelParameters.update_forward_refs
+      ~ModelParameters.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~ModelParameters.model_computed_fields
+      ~ModelParameters.model_config
+      ~ModelParameters.model_extra
+      ~ModelParameters.model_fields
+      ~ModelParameters.model_fields_set
+      ~ModelParameters.name
+      ~ModelParameters.inputs
+      ~ModelParameters.outputs
+      ~ModelParameters.parameters
+      ~ModelParameters.step_size
+      ~ModelParameters.variables
+   
+   
