@@ -1,0 +1,60 @@
+ProjectInformation
+==================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: ProjectInformation
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~ProjectInformation.__init__
+      ~ProjectInformation.construct
+      ~ProjectInformation.copy
+      ~ProjectInformation.dict
+      ~ProjectInformation.from_orm
+      ~ProjectInformation.json
+      ~ProjectInformation.model_construct
+      ~ProjectInformation.model_copy
+      ~ProjectInformation.model_dump
+      ~ProjectInformation.model_dump_json
+      ~ProjectInformation.model_json_schema
+      ~ProjectInformation.model_parametrized_name
+      ~ProjectInformation.model_post_init
+      ~ProjectInformation.model_rebuild
+      ~ProjectInformation.model_validate
+      ~ProjectInformation.model_validate_json
+      ~ProjectInformation.model_validate_strings
+      ~ProjectInformation.parse_file
+      ~ProjectInformation.parse_obj
+      ~ProjectInformation.parse_raw
+      ~ProjectInformation.schema
+      ~ProjectInformation.schema_json
+      ~ProjectInformation.update_forward_refs
+      ~ProjectInformation.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~ProjectInformation.model_computed_fields
+      ~ProjectInformation.model_config
+      ~ProjectInformation.model_extra
+      ~ProjectInformation.model_fields
+      ~ProjectInformation.model_fields_set
+      ~ProjectInformation.id
+      ~ProjectInformation.name
+      ~ProjectInformation.created_at
+      ~ProjectInformation.version
+   
+   
