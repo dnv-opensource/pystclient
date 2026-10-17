@@ -1,0 +1,26 @@
+FmuCausalityType
+================
+
+.. currentmodule:: pystclient.types
+
+.. autoclass:: FmuCausalityType
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuCausalityType.INPUT
+      ~FmuCausalityType.OUTPUT
+      ~FmuCausalityType.PARAMETER
+   
+   

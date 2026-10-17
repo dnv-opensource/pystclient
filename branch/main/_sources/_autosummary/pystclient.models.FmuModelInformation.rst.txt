@@ -1,0 +1,66 @@
+FmuModelInformation
+===================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuModelInformation
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuModelInformation.__init__
+      ~FmuModelInformation.construct
+      ~FmuModelInformation.copy
+      ~FmuModelInformation.dict
+      ~FmuModelInformation.from_orm
+      ~FmuModelInformation.json
+      ~FmuModelInformation.model_construct
+      ~FmuModelInformation.model_copy
+      ~FmuModelInformation.model_dump
+      ~FmuModelInformation.model_dump_json
+      ~FmuModelInformation.model_json_schema
+      ~FmuModelInformation.model_parametrized_name
+      ~FmuModelInformation.model_post_init
+      ~FmuModelInformation.model_rebuild
+      ~FmuModelInformation.model_validate
+      ~FmuModelInformation.model_validate_json
+      ~FmuModelInformation.model_validate_strings
+      ~FmuModelInformation.parse_file
+      ~FmuModelInformation.parse_obj
+      ~FmuModelInformation.parse_raw
+      ~FmuModelInformation.schema
+      ~FmuModelInformation.schema_json
+      ~FmuModelInformation.update_forward_refs
+      ~FmuModelInformation.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuModelInformation.model_computed_fields
+      ~FmuModelInformation.model_config
+      ~FmuModelInformation.model_extra
+      ~FmuModelInformation.model_fields
+      ~FmuModelInformation.model_fields_set
+      ~FmuModelInformation.id
+      ~FmuModelInformation.version
+      ~FmuModelInformation.filename
+      ~FmuModelInformation.allows_multiple_instances
+      ~FmuModelInformation.fmu_version
+      ~FmuModelInformation.model_name
+      ~FmuModelInformation.access_rights
+      ~FmuModelInformation.platforms
+      ~FmuModelInformation.fmu_description
+      ~FmuModelInformation.fmi_version
+   
+   

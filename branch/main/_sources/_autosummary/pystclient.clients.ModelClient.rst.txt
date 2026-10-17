@@ -1,0 +1,33 @@
+ModelClient
+===========
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: ModelClient
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~ModelClient.__init__
+      ~ModelClient.delete_models
+      ~ModelClient.find_models_by_filename
+      ~ModelClient.retrieve_model_info_by_name
+      ~ModelClient.upload_model
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~ModelClient.session
+   
+   
