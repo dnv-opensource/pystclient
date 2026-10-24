@@ -1,0 +1,47 @@
+﻿pystclient.models
+=================
+
+.. automodule:: pystclient.models
+   :members:
+   :exclude-members: BaseProject,FmuConnections,FmuModelInformation,FmuNode,FmuNodeEdge,FmuSelect,FmuVariable,FmuVariableGroup,FmuVariables,LoggingConfiguration,MeasurementInstance,MeasurementMetadata,MeasurementQuery,MeasurementVariables,Measurements,ModelParameters,ModelVariable,ProjectInformation,QueryResult,QueryVariable,Simulation,SimulationConfig,SimulationInfo,SimulationParameters,SimulatorStatus,UploadedModelInfo,
+   
+
+
+   
+   .. rubric:: Functions
+   .. autosummary::
+   
+      position_transformer
+   
+   .. rubric:: Classes
+   .. autosummary::
+      :toctree:
+      :template: custom-class.rst
+   
+      BaseProject
+      FmuConnections
+      FmuModelInformation
+      FmuNode
+      FmuNodeEdge
+      FmuSelect
+      FmuVariable
+      FmuVariableGroup
+      FmuVariables
+      LoggingConfiguration
+      MeasurementInstance
+      MeasurementMetadata
+      MeasurementQuery
+      MeasurementVariables
+      Measurements
+      ModelParameters
+      ModelVariable
+      ProjectInformation
+      QueryResult
+      QueryVariable
+      Simulation
+      SimulationConfig
+      SimulationInfo
+      SimulationParameters
+      SimulatorStatus
+      UploadedModelInfo
+   

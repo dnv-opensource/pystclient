@@ -1,0 +1,66 @@
+FmuNode
+=======
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuNode
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuNode.__init__
+      ~FmuNode.construct
+      ~FmuNode.copy
+      ~FmuNode.dict
+      ~FmuNode.from_orm
+      ~FmuNode.json
+      ~FmuNode.model_construct
+      ~FmuNode.model_copy
+      ~FmuNode.model_dump
+      ~FmuNode.model_dump_json
+      ~FmuNode.model_json_schema
+      ~FmuNode.model_parametrized_name
+      ~FmuNode.model_post_init
+      ~FmuNode.model_rebuild
+      ~FmuNode.model_validate
+      ~FmuNode.model_validate_json
+      ~FmuNode.model_validate_strings
+      ~FmuNode.model_validator
+      ~FmuNode.parse_file
+      ~FmuNode.parse_obj
+      ~FmuNode.parse_raw
+      ~FmuNode.position_serializer
+      ~FmuNode.schema
+      ~FmuNode.schema_json
+      ~FmuNode.update_forward_refs
+      ~FmuNode.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuNode.data
+      ~FmuNode.model_computed_fields
+      ~FmuNode.model_config
+      ~FmuNode.model_extra
+      ~FmuNode.model_fields
+      ~FmuNode.model_fields_set
+      ~FmuNode.instance
+      ~FmuNode.fmu
+      ~FmuNode.model_type
+      ~FmuNode.model_id
+      ~FmuNode.id
+      ~FmuNode.position
+      ~FmuNode.type
+   
+   

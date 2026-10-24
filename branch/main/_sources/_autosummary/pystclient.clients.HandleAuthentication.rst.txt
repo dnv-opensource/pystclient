@@ -1,0 +1,61 @@
+HandleAuthentication
+====================
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: HandleAuthentication
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~HandleAuthentication.__init__
+      ~HandleAuthentication.address_string
+      ~HandleAuthentication.date_time_string
+      ~HandleAuthentication.do_POST
+      ~HandleAuthentication.end_headers
+      ~HandleAuthentication.finish
+      ~HandleAuthentication.flush_headers
+      ~HandleAuthentication.handle
+      ~HandleAuthentication.handle_expect_100
+      ~HandleAuthentication.handle_one_request
+      ~HandleAuthentication.log_date_time_string
+      ~HandleAuthentication.log_error
+      ~HandleAuthentication.log_message
+      ~HandleAuthentication.log_request
+      ~HandleAuthentication.parse_request
+      ~HandleAuthentication.send_error
+      ~HandleAuthentication.send_header
+      ~HandleAuthentication.send_response
+      ~HandleAuthentication.send_response_only
+      ~HandleAuthentication.setup
+      ~HandleAuthentication.version_string
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~HandleAuthentication.default_request_version
+      ~HandleAuthentication.disable_nagle_algorithm
+      ~HandleAuthentication.error_content_type
+      ~HandleAuthentication.error_message_format
+      ~HandleAuthentication.monthname
+      ~HandleAuthentication.protocol_version
+      ~HandleAuthentication.rbufsize
+      ~HandleAuthentication.responses
+      ~HandleAuthentication.server_version
+      ~HandleAuthentication.sys_version
+      ~HandleAuthentication.timeout
+      ~HandleAuthentication.wbufsize
+      ~HandleAuthentication.weekdayname
+   
+   
