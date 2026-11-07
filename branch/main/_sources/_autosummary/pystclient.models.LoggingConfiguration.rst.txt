@@ -1,0 +1,60 @@
+LoggingConfiguration
+====================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: LoggingConfiguration
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~LoggingConfiguration.__init__
+      ~LoggingConfiguration.construct
+      ~LoggingConfiguration.copy
+      ~LoggingConfiguration.dict
+      ~LoggingConfiguration.from_orm
+      ~LoggingConfiguration.json
+      ~LoggingConfiguration.merge
+      ~LoggingConfiguration.model_construct
+      ~LoggingConfiguration.model_copy
+      ~LoggingConfiguration.model_dump
+      ~LoggingConfiguration.model_dump_json
+      ~LoggingConfiguration.model_json_schema
+      ~LoggingConfiguration.model_parametrized_name
+      ~LoggingConfiguration.model_post_init
+      ~LoggingConfiguration.model_rebuild
+      ~LoggingConfiguration.model_validate
+      ~LoggingConfiguration.model_validate_json
+      ~LoggingConfiguration.model_validate_strings
+      ~LoggingConfiguration.parse_file
+      ~LoggingConfiguration.parse_obj
+      ~LoggingConfiguration.parse_raw
+      ~LoggingConfiguration.schema
+      ~LoggingConfiguration.schema_json
+      ~LoggingConfiguration.to_dict
+      ~LoggingConfiguration.update_forward_refs
+      ~LoggingConfiguration.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~LoggingConfiguration.model_computed_fields
+      ~LoggingConfiguration.model_config
+      ~LoggingConfiguration.model_extra
+      ~LoggingConfiguration.model_fields
+      ~LoggingConfiguration.model_fields_set
+      ~LoggingConfiguration.post_plotting
+      ~LoggingConfiguration.log_config_stored
+   
+   

@@ -1,0 +1,14 @@
+pystclient.utils.time
+=====================
+
+.. automodule:: pystclient.utils.time
+   :members:
+
+
+   
+   .. rubric:: Functions
+   .. autosummary::
+   
+      convert_to_timestamp
+      to_millis
+   

@@ -1,0 +1,25 @@
+SimulationType
+==============
+
+.. currentmodule:: pystclient.types
+
+.. autoclass:: SimulationType
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulationType.DISTRIBUTED
+      ~SimulationType.CENTRALIZED
+   
+   

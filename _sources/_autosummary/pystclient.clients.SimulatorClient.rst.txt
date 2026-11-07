@@ -1,0 +1,40 @@
+SimulatorClient
+===============
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: SimulatorClient
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~SimulatorClient.__init__
+      ~SimulatorClient.create
+      ~SimulatorClient.end_simulation
+      ~SimulatorClient.finished
+      ~SimulatorClient.ready
+      ~SimulatorClient.start
+      ~SimulatorClient.start_logging
+      ~SimulatorClient.status
+      ~SimulatorClient.stop
+      ~SimulatorClient.stop_logging
+      ~SimulatorClient.terminate
+      ~SimulatorClient.wait_until_ready
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulatorClient.session
+   
+   

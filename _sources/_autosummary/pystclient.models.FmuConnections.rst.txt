@@ -1,0 +1,60 @@
+FmuConnections
+==============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuConnections
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuConnections.__init__
+      ~FmuConnections.build_connections
+      ~FmuConnections.construct
+      ~FmuConnections.copy
+      ~FmuConnections.dict
+      ~FmuConnections.from_orm
+      ~FmuConnections.from_response
+      ~FmuConnections.json
+      ~FmuConnections.model_construct
+      ~FmuConnections.model_copy
+      ~FmuConnections.model_dump
+      ~FmuConnections.model_dump_json
+      ~FmuConnections.model_json_schema
+      ~FmuConnections.model_parametrized_name
+      ~FmuConnections.model_post_init
+      ~FmuConnections.model_rebuild
+      ~FmuConnections.model_validate
+      ~FmuConnections.model_validate_json
+      ~FmuConnections.model_validate_strings
+      ~FmuConnections.parse_file
+      ~FmuConnections.parse_obj
+      ~FmuConnections.parse_raw
+      ~FmuConnections.schema
+      ~FmuConnections.schema_json
+      ~FmuConnections.update_forward_refs
+      ~FmuConnections.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuConnections.model_computed_fields
+      ~FmuConnections.model_config
+      ~FmuConnections.model_extra
+      ~FmuConnections.model_fields
+      ~FmuConnections.model_fields_set
+      ~FmuConnections.nodes
+      ~FmuConnections.edges
+   
+   

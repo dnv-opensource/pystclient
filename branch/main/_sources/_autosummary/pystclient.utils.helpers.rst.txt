@@ -1,0 +1,21 @@
+pystclient.utils.helpers
+========================
+
+.. automodule:: pystclient.utils.helpers
+   :members:
+
+
+   
+   .. rubric:: Functions
+   .. autosummary::
+   
+      handle_exception
+      merge_dicts
+      pprint_map
+      raise_if_not_json_ok
+      raise_if_not_ok
+      random_string
+      stringify_keys
+      to_uuid
+      without_none_values
+   
