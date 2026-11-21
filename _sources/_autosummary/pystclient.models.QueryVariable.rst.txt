@@ -1,0 +1,65 @@
+QueryVariable
+=============
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: QueryVariable
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~QueryVariable.__init__
+      ~QueryVariable.check_name_id
+      ~QueryVariable.construct
+      ~QueryVariable.copy
+      ~QueryVariable.dict
+      ~QueryVariable.from_orm
+      ~QueryVariable.json
+      ~QueryVariable.model_construct
+      ~QueryVariable.model_copy
+      ~QueryVariable.model_dump
+      ~QueryVariable.model_dump_json
+      ~QueryVariable.model_json_schema
+      ~QueryVariable.model_parametrized_name
+      ~QueryVariable.model_post_init
+      ~QueryVariable.model_rebuild
+      ~QueryVariable.model_validate
+      ~QueryVariable.model_validate_json
+      ~QueryVariable.model_validate_strings
+      ~QueryVariable.parse_file
+      ~QueryVariable.parse_obj
+      ~QueryVariable.parse_raw
+      ~QueryVariable.schema
+      ~QueryVariable.schema_json
+      ~QueryVariable.update_forward_refs
+      ~QueryVariable.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~QueryVariable.model_computed_fields
+      ~QueryVariable.model_config
+      ~QueryVariable.model_extra
+      ~QueryVariable.model_fields
+      ~QueryVariable.model_fields_set
+      ~QueryVariable.instance_id
+      ~QueryVariable.instance_name
+      ~QueryVariable.name
+      ~QueryVariable.type
+      ~QueryVariable.variability
+      ~QueryVariable.reference
+      ~QueryVariable.causality
+      ~QueryVariable.start_value
+   
+   

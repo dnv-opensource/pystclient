@@ -1,0 +1,35 @@
+SimulationResults
+=================
+
+.. currentmodule:: pystclient.clients
+
+.. autoclass:: SimulationResults
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~SimulationResults.__init__
+      ~SimulationResults.measurement_size
+      ~SimulationResults.query_variables
+      ~SimulationResults.reset
+      ~SimulationResults.step
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~SimulationResults.measurements
+      ~SimulationResults.session
+      ~SimulationResults.project_id
+   
+   

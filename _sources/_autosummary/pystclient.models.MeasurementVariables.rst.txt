@@ -1,0 +1,62 @@
+MeasurementVariables
+====================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: MeasurementVariables
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~MeasurementVariables.__init__
+      ~MeasurementVariables.construct
+      ~MeasurementVariables.copy
+      ~MeasurementVariables.dict
+      ~MeasurementVariables.from_orm
+      ~MeasurementVariables.json
+      ~MeasurementVariables.model_construct
+      ~MeasurementVariables.model_copy
+      ~MeasurementVariables.model_dump
+      ~MeasurementVariables.model_dump_json
+      ~MeasurementVariables.model_json_schema
+      ~MeasurementVariables.model_parametrized_name
+      ~MeasurementVariables.model_post_init
+      ~MeasurementVariables.model_rebuild
+      ~MeasurementVariables.model_validate
+      ~MeasurementVariables.model_validate_json
+      ~MeasurementVariables.model_validate_strings
+      ~MeasurementVariables.parse_file
+      ~MeasurementVariables.parse_obj
+      ~MeasurementVariables.parse_raw
+      ~MeasurementVariables.schema
+      ~MeasurementVariables.schema_json
+      ~MeasurementVariables.update_forward_refs
+      ~MeasurementVariables.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~MeasurementVariables.model_computed_fields
+      ~MeasurementVariables.model_config
+      ~MeasurementVariables.model_extra
+      ~MeasurementVariables.model_fields
+      ~MeasurementVariables.model_fields_set
+      ~MeasurementVariables.name
+      ~MeasurementVariables.type
+      ~MeasurementVariables.variability
+      ~MeasurementVariables.reference
+      ~MeasurementVariables.causality
+      ~MeasurementVariables.start_value
+   
+   
