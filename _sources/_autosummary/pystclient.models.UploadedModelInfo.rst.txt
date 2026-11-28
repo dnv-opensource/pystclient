@@ -1,0 +1,58 @@
+UploadedModelInfo
+=================
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: UploadedModelInfo
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~UploadedModelInfo.__init__
+      ~UploadedModelInfo.construct
+      ~UploadedModelInfo.copy
+      ~UploadedModelInfo.dict
+      ~UploadedModelInfo.from_orm
+      ~UploadedModelInfo.json
+      ~UploadedModelInfo.model_construct
+      ~UploadedModelInfo.model_copy
+      ~UploadedModelInfo.model_dump
+      ~UploadedModelInfo.model_dump_json
+      ~UploadedModelInfo.model_json_schema
+      ~UploadedModelInfo.model_parametrized_name
+      ~UploadedModelInfo.model_post_init
+      ~UploadedModelInfo.model_rebuild
+      ~UploadedModelInfo.model_validate
+      ~UploadedModelInfo.model_validate_json
+      ~UploadedModelInfo.model_validate_strings
+      ~UploadedModelInfo.parse_file
+      ~UploadedModelInfo.parse_obj
+      ~UploadedModelInfo.parse_raw
+      ~UploadedModelInfo.schema
+      ~UploadedModelInfo.schema_json
+      ~UploadedModelInfo.update_forward_refs
+      ~UploadedModelInfo.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~UploadedModelInfo.model_computed_fields
+      ~UploadedModelInfo.model_config
+      ~UploadedModelInfo.model_extra
+      ~UploadedModelInfo.model_fields
+      ~UploadedModelInfo.model_fields_set
+      ~UploadedModelInfo.id
+      ~UploadedModelInfo.name
+   
+   

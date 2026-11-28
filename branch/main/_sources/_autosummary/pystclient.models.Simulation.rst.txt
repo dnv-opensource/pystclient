@@ -1,0 +1,58 @@
+Simulation
+==========
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: Simulation
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~Simulation.__init__
+      ~Simulation.construct
+      ~Simulation.copy
+      ~Simulation.dict
+      ~Simulation.from_orm
+      ~Simulation.json
+      ~Simulation.model_construct
+      ~Simulation.model_copy
+      ~Simulation.model_dump
+      ~Simulation.model_dump_json
+      ~Simulation.model_json_schema
+      ~Simulation.model_parametrized_name
+      ~Simulation.model_post_init
+      ~Simulation.model_rebuild
+      ~Simulation.model_validate
+      ~Simulation.model_validate_json
+      ~Simulation.model_validate_strings
+      ~Simulation.parse_file
+      ~Simulation.parse_obj
+      ~Simulation.parse_raw
+      ~Simulation.schema
+      ~Simulation.schema_json
+      ~Simulation.update_forward_refs
+      ~Simulation.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~Simulation.model_computed_fields
+      ~Simulation.model_config
+      ~Simulation.model_extra
+      ~Simulation.model_fields
+      ~Simulation.model_fields_set
+      ~Simulation.id
+      ~Simulation.batch_id
+   
+   

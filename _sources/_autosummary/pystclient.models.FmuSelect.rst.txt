@@ -1,0 +1,60 @@
+FmuSelect
+=========
+
+.. currentmodule:: pystclient.models
+
+.. autoclass:: FmuSelect
+   :members:
+   :show-inheritance:
+
+
+   
+   .. automethod:: __init__
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~FmuSelect.__init__
+      ~FmuSelect.check_one_exists
+      ~FmuSelect.construct
+      ~FmuSelect.copy
+      ~FmuSelect.dict
+      ~FmuSelect.from_orm
+      ~FmuSelect.json
+      ~FmuSelect.model_construct
+      ~FmuSelect.model_copy
+      ~FmuSelect.model_dump
+      ~FmuSelect.model_dump_json
+      ~FmuSelect.model_json_schema
+      ~FmuSelect.model_parametrized_name
+      ~FmuSelect.model_post_init
+      ~FmuSelect.model_rebuild
+      ~FmuSelect.model_validate
+      ~FmuSelect.model_validate_json
+      ~FmuSelect.model_validate_strings
+      ~FmuSelect.parse_file
+      ~FmuSelect.parse_obj
+      ~FmuSelect.parse_raw
+      ~FmuSelect.schema
+      ~FmuSelect.schema_json
+      ~FmuSelect.update_forward_refs
+      ~FmuSelect.validate
+   
+   
+
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+   
+      ~FmuSelect.model_computed_fields
+      ~FmuSelect.model_config
+      ~FmuSelect.model_extra
+      ~FmuSelect.model_fields
+      ~FmuSelect.model_fields_set
+      ~FmuSelect.filename
+      ~FmuSelect.version
+      ~FmuSelect.id
+   
+   
